@@ -99,18 +99,12 @@ do
         echo $i;
         case $F_NUM in
             1) ./btest bits.c -f bitCount -1 $i;;
-            #TODO
             2) ./btest bits.c -f bang -1 $i;;
             3) ./btest bits.c -f negate -1 $i;;
-            #TODO
             4) ./btest bits.c -f isPositive -1 $i;;
-            #TODO
             5) ./btest bits.c -f ilog2 -1 $i;;
-            #TODO
             6) ./btest bits.c -f float_neg -1 $i;;
-            #TODO
             7) ./btest bits.c -f float_i2f -1 $i;;
-            #TODO
             8) ./btest bits.c -f fleat_twice -1 $i;;
         esac
         echo ;
@@ -134,13 +128,11 @@ do
                 echo ;
             elif [ $F_NUM -eq 11 ] && [ $j -gt 0 ]
             then # 1 <= n <= 32
-                #TODO
                 echo $i $j;
                 ./btest bits.c -f fitsBits $i -2 $j;
                 echo ;
             elif [ $F_NUM -eq 12 ] && [ $j -lt 31 ]
             then # 0 <= n <= 30
-                #TODO
                 echo $i $j;
                 ./btest bits.c -f divpwr2 $i -2 $j;
                 echo ;
@@ -155,7 +147,6 @@ do
             echo $i $j;
             case $F_NUM in
                 13) ./btest bits.c -f bitAnd -1 $i -2 $j;;
-                #TODO
                 14) ./btest bits.c -f isLessOrEqual -1 $i -2 $j;;
             esac
             echo ;
