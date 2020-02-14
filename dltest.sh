@@ -124,17 +124,17 @@ do
             elif [ $F_NUM -eq 10 ] && [ $j -lt 32 ]
             then # 0 <= n <= 31
                 echo $i $j;
-                ./btest bits.c -f logicalShift $i -2 $j;
+                ./btest bits.c -f logicalShift -1 $i -2 $j;
                 echo ;
             elif [ $F_NUM -eq 11 ] && [ $j -gt 0 ]
             then # 1 <= n <= 32
                 echo $i $j;
-                ./btest bits.c -f fitsBits $i -2 $j;
+                ./btest bits.c -f fitsBits -1 $i -2 $j;
                 echo ;
             elif [ $F_NUM -eq 12 ] && [ $j -lt 31 ]
             then # 0 <= n <= 30
                 echo $i $j;
-                ./btest bits.c -f divpwr2 $i -2 $j;
+                ./btest bits.c -f divpwr2 -1 $i -2 $j;
                 echo ;
             fi
         done
