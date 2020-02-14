@@ -6,7 +6,7 @@
 
 if [ $# -eq 0 ]
 then
-    echo "test.sh error: no function name called.";
+    echo "dltest.sh error: no function name called.";
     exit 1;
 fi
 
@@ -43,7 +43,7 @@ done
 
 if [ $F_NUM -eq -1 ]
 then
-    echo "test.sh error: function not found.";
+    echo "dltest.sh error: function not found.";
     exit 2;
 fi  
 
